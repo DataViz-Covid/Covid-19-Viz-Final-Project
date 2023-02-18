@@ -82,7 +82,7 @@ function drawChart_v5() {
             
 
             const colors = d3.scaleThreshold()
-                .domain([10, 50, 100, 300, 500, 1000, 2000, 3000, 4000, max_count])
+                .domain([10, 50, 100, 500, 1000, 2000, 3000, 4000, max_count])
                 .range(d3.schemeGreens[9])
 
 
@@ -102,7 +102,12 @@ function drawChart_v5() {
                 Tooltip.style("opacity", 0);
             }
 
-            countries.attr("fill", function (d){ if (d.properties["ADMIN"] in data_dict) return colors(data_dict[d.properties["ADMIN"]]) ; else return "white" })
+            countries.attr("fill", function (d){ 
+                if (d.properties["ADMIN"] in data_dict) {
+                    return colors(data_dict[d.properties["ADMIN"]]) ; 
+                } else {
+                    return "white" ;
+                }})
                 .on("mouseover", mouseover)
                 .on("mousemove", mousemove)
                 .on("mouseleave", mouseleave) 
@@ -137,7 +142,7 @@ function drawChart_v5() {
                 //extent will be a two-element array, format it however you want:
                 var format = d3.format("0.2f");
                 if( i == 0 ) return "< " + format(+extent[1]);
-                if(i == 8) return ">" + format(+extent[0]);
+                if(i == 8) return "> " + format(+extent[0]);
                 return format(+extent[0]) + " - " + format(+extent[1]);
             });
             legend.append('text')
