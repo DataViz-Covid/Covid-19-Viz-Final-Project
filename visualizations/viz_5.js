@@ -1,6 +1,6 @@
 function drawChart_v5() {
     const div_id = "#v5";
-    // Clara - Death % / county
+    // Clara - Death % / country
 
     //Width and height
     let win_width = d3.select(div_id).node().getBoundingClientRect().width;
@@ -96,7 +96,6 @@ function drawChart_v5() {
                 Tooltip.html(loc + "<br>" + death_count)
                 .style("left", (event.pageX+20) + "px")
                 .style("top", (event.pageY) + "px");
-                console.log(loc, death_count)
             }
             let mouseleave = function (d) {
                 Tooltip.style("opacity", 0);
@@ -106,7 +105,7 @@ function drawChart_v5() {
                 if (d.properties["ADMIN"] in data_dict) {
                     return colors(data_dict[d.properties["ADMIN"]]) ; 
                 } else {
-                    return "white" ;
+                    return "#909090" ;
                 }})
                 .on("mouseover", mouseover)
                 .on("mousemove", mousemove)
@@ -121,7 +120,7 @@ function drawChart_v5() {
                 .append('rect')
                 .attr("x", 100)
                 .attr("y", function(d, i) {
-                return 30+ i * 30;
+                return 60+ i * 30;
                 })
             .attr("width", 20)
             .attr("height", 20)
@@ -129,12 +128,30 @@ function drawChart_v5() {
             .style("stroke-width", 1)
             .style("fill", function(d){return d;}); 
                //the data objects are the fill colors
+
+            legend
+               .append('rect')
+               .attr("x", 100)
+               .attr("y", 30)
+           .attr("width", 20)
+           .attr("height", 20)
+           .style("stroke", "black")
+           .style("stroke-width", 1)
+           .style("fill", "#909090"); 
+
+           legend
+           .append('text')
+           .attr("x", 130) //leave 5 pixel space after the <rect>
+           .attr("y", function(d, i) {
+            if (i == 0) { return 45 + i;}
+           })
+           .text("No Data");
         
              legend
             .append('text')
             .attr("x", 130) //leave 5 pixel space after the <rect>
             .attr("y", function(d, i) {
-               return 30+ i * 30;
+               return 60+ i * 30;
             })
             .attr("dy", "0.8em") //place text one line *below* the x,y point
             .text(function(d,i) {
@@ -145,6 +162,8 @@ function drawChart_v5() {
                 if(i == 8) return "> " + format(+extent[0]);
                 return format(+extent[0]) + " - " + format(+extent[1]);
             });
+
+            
             legend.append('text')
             .attr("x", 100)
             .attr("y", 20)
