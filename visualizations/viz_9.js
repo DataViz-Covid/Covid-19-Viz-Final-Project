@@ -1,7 +1,7 @@
 function drawChart_v9() {
     const div_id = "#v9";
 
-    var list1 = ["Africa", "Asisa", "Europe", "North America", "South America", "Oceania"];
+    var list1 = ["Africa", "Asia", "Europe", "North America", "South America", "Oceania"];
     var list2 = ["China", "India", "United States", "Japan", "Brazil"];
     var all = false
 

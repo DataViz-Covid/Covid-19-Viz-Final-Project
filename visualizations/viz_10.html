@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script src="https://d3js.org/d3.v6.js"></script>
+    <link rel="stylesheet" href="../custom_style.css">
     <title>Viz 10</title>
 </head>
 <body>
@@ -12,9 +13,15 @@
         <h2>TODO</h2>
         Clara - Scatter plot of hospital stay duration per age
     </div>
-
+    <div id = "radio">
+        <input type="radio" id="65 or older" name="radio"  />
+        <label for="65 or older">65 or older</label>
+  
+        <input type="radio" id="70 or older" name="radio"  checked/>
+        <label for="70 or older">70 or older</label>
+      </div>
     <div id="v10"></div>
-    <script src="./viz_10.js"></script>
+    <script src="viz_10.js"></script>
 
 </body>
 </html>
