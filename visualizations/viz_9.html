@@ -13,8 +13,14 @@
         <h2>TODO</h2>
         Clara - Line graph Daily vax doses given per day per country
     </div>
-
-    <div id = "check">
+    <div id = "radio">
+        <input type="radio" id="Continents" name="radio" checked />
+        <label for="Continents">Continents</label>
+  
+        <input type="radio" id="Countries" name="radio" />
+        <label for="Countries">Countries</label>
+      </div>
+    <div id = "check" style="display: none";>
         <input type="checkbox" name="China" id = "China" checked>
         <label for="China">China</label>
         <input type="checkbox" name="India" id = "India" checked>
@@ -39,6 +45,20 @@
         <label for="Australia">Australia</label>
         <input type="checkbox" name="All Countries" id = "Countries" unchecked>
         <label for="Countries">All Countries</label>
+    </div>
+    <div id = "cont" style="display: block";>
+        <input type="checkbox" name="Africa" id = "Africa" checked>
+        <label for="Africa">Africa</label>
+        <input type="checkbox" name="Asia" id = "Asia" checked>
+        <label for="Asia">Asia</label>
+        <input type="checkbox" name="Europe" id = "Europe" checked>
+        <label for="Europe">Europe</label>
+        <input type="checkbox" name="North America" id = "North America" checked>
+        <label for="North America">North America</label>
+        <input type="checkbox" name="South America" id = "South America" checked>
+        <label for="South America">South America</label>
+        <input type="checkbox" name="Oceania" id = "Oceania" checked>
+        <label for="Oceania">Oceania</label>
       </div>
 
     <div id="v9"></div>
