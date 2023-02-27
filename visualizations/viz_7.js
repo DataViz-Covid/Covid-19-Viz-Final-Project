@@ -5,16 +5,16 @@ function drawChart_v7() {
         var markedradio = document.querySelector('input[type="radio"]:checked'); 
         if (markedradio.id == "Countries")
         {
-            d3.selectAll("svg").remove()
+            d3.select("#svg7").remove()
             draw_countries(); 
             
         }
         else if (markedradio.id == "Continents") {
-            d3.selectAll("svg").remove()
+            d3.select("#svg7").remove()
             draw_continents(); 
         }
         else {
-            d3.selectAll("svg").remove()
+            d3.select("#svg7").remove()
             draw_world(); 
         }
         
@@ -35,6 +35,7 @@ function drawChart_v7() {
 	let svg = d3.select(div_id)
 		.append("svg")
 		.attr("viewBox", "0 0 " + win_width + " " + win_height)
+        .attr("id","svg7")
 
     let g = svg.append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");     
@@ -212,10 +213,11 @@ function drawChart_v7() {
 
 
     function draw_continents() {
-        d3.selectAll("svg").remove()
+        d3.select("#svg7").remove()
         let svg = d3.select(div_id)
 		.append("svg")
 		.attr("viewBox", "0 0 " + win_width + " " + win_height)
+        .attr("id","svg7")
 
     let g = svg.append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");     
@@ -388,10 +390,11 @@ function drawChart_v7() {
     }
 
     function draw_world() {
-        d3.selectAll("svg").remove()
+        d3.select("#svg7").remove()
         let svg = d3.select(div_id)
 		.append("svg")
 		.attr("viewBox", "0 0 " + win_width + " " + win_height)
+        .attr("id","svg7")
 
     let g = svg.append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");     

@@ -11,14 +11,14 @@ function drawChart_v9() {
         {
             document.getElementById('check').style="display: block"
             document.getElementById('cont').style="display: none"
-            d3.selectAll("svg").remove()
+            d3.selectAll("#svg9").remove()
             draw_viz(); 
             
         }
         else {
             document.getElementById('cont').style="display: block"
             document.getElementById('check').style="display: none"
-            d3.selectAll("svg").remove()
+            d3.selectAll("#svg9").remove()
             draw_continents(); 
         }
         
@@ -34,7 +34,7 @@ function drawChart_v9() {
             }
           list2.push(checkbox.id);  
         } 
-        d3.selectAll("svg").remove()
+        d3.selectAll("#svg9").remove()
         draw_viz();                 
     }  
 
@@ -44,7 +44,7 @@ function drawChart_v9() {
         for (var checkbox of markedCheckbox) { 
           list1.push(checkbox.id);  
         }  
-        d3.selectAll("svg").remove()
+        d3.selectAll("#svg9").remove()
         draw_continents(); 
       }  
     
@@ -67,6 +67,7 @@ function drawChart_v9() {
 	let svg = d3.select(div_id)
 		.append("svg")
 		.attr("viewBox", "0 0 " + win_width + " " + win_height)
+        .attr("id","svg9")
 
     let g = svg.append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");     
@@ -249,10 +250,11 @@ function drawChart_v9() {
 
 
     function draw_continents() {
-        d3.selectAll("svg").remove()
+        d3.selectAll("#svg9").remove()
         let svg = d3.select(div_id)
 		.append("svg")
 		.attr("viewBox", "0 0 " + win_width + " " + win_height)
+        .attr("id","svg9")
 
     let g = svg.append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");     
@@ -408,7 +410,7 @@ function drawChart_v9() {
 
         var click = function(event, d){
             list3 = [d]
-            d3.selectAll("svg").remove()
+            d3.selectAll("#svg9").remove()
             // Clara - Line graph Daily vax doses given per day per country
         
             let ratio = 2.5; // 3 width = 1 height
@@ -423,6 +425,7 @@ function drawChart_v9() {
             let svg = d3.select(div_id)
             .append("svg")
             .attr("viewBox", "0 0 " + win_width + " " + win_height)
+            .attr("id","svg9")
       
         let g = svg.append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")"); 

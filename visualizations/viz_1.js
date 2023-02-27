@@ -12,7 +12,7 @@ function drawChart_v1() {
         
         else { log = false;}
 
-        d3.selectAll("svg").remove()
+        d3.select("#svg1").remove()
         draw_viz()
     }
     draw_viz()
@@ -33,6 +33,7 @@ function drawChart_v1() {
 	let svg = d3.select(div_id)
 		.append("svg")
 		.attr("viewBox", "0 0 " + win_width + " " + win_height)
+        .attr("id","svg1")
 
     let g = svg.append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");

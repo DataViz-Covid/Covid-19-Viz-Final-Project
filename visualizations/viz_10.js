@@ -18,7 +18,7 @@ function drawChart_v10() {
         }
         else { choice = "age_70";}
 
-        d3.selectAll("svg").remove()
+        d3.selectAll("#svg10").remove()
         draw_viz()
     }
     draw_viz()
@@ -36,6 +36,7 @@ function drawChart_v10() {
 	let svg = d3.select(div_id)
 		.append("svg")
 		.attr("viewBox", "0 0 " + win_width + " " + win_height)
+        .attr("id","svg10")
 
     let g = svg.append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
