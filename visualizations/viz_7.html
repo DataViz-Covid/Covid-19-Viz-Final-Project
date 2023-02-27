@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script src="https://d3js.org/d3.v6.js"></script>
+    <link rel="stylesheet" href="../custom_style.css">
     <title>Viz 7</title>
 </head>
 <body>
@@ -12,9 +13,20 @@
         <h2>TODO</h2>
         Arnaud - Line graph of cases over time per country
     </div>
+    <div id = "radio">
+        <input type="radio" id="World" name="radio" checked/>
+        <label for="World">World</label>
+
+        <input type="radio" id="Continents" name="radio" />
+        <label for="Continents">Continents</label>
+
+        <input type="radio" id="Countries" name="radio"/>
+        <label for="Countries">Countries</label>
+    </div>
 
     <div id="v7"></div>
-    <script src="./viz_7.js"></script>
+
+    <script src="viz_7.js"></script>
 
 </body>
 </html>

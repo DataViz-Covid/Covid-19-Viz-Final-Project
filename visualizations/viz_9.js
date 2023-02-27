@@ -123,15 +123,6 @@ function drawChart_v9() {
             .text("New Vaccinations")
             .attr("text-anchor", "start")
 
-
-        /* g.append("defs").append("SVG:clipPath")
-        .attr("id", "clip")
-        .append("SVG:rect")
-        .attr("width", width )
-        .attr("height", height )
-        .attr("x", 0)
-        .attr("y", 0); */
-
         var sumstat = d3.groups(data, d => d.location)
         var countries = sumstat.map(function(d){return d[0]});
        
@@ -207,8 +198,6 @@ function drawChart_v9() {
                     (d[1])
             
             })
-            .on("mouseover", highlight)
-            .on("mouseleave", noHighlight)
 
         g.append('g')
             .selectAll("dot")
@@ -224,47 +213,6 @@ function drawChart_v9() {
             .on("mousemove", mousemove)
             .on("mouseleave", mouseleave)
         
-        /*g.append('g')
-        .attr("clip-path", "url(#clip)")
-            
-        var zoom = d3.zoom()
-            .scaleExtent([.5, 20])  // This control how much you can unzoom (x0.5) and zoom (x20)
-            .extent([[0, 0], [width, height]])
-            .on("zoom", updateChart);
-
-         g.append("rect")
-            .attr("width", width)
-            .attr("height", height)
-            .style("fill", "none")
-            .style("pointer-events", "all")
-            .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
-            .call(zoom);
-
-        function updateChart() {
-
-            // recover the new scale
-            g.attr("transform", d3.zoomTransform(this))
-            
-
-            g.selectAll(".line")
-            .data(sumstat)
-            .join("path")
-            .attr("fill", "none")
-            .attr("stroke", function(d){ return color(d[0]) })
-            .attr("class", function(d) { return "point "+ normalize_name(d[0]) })
-            .attr("stroke-width", 1.5)
-            .attr("d", function (d) {
-                return d3.line()
-                    .x(function(d) { return x(d.date); })
-                    .y(function(d) { return y(d.new_vaccinations); })
-                    (d[1])
-            
-            })
-            .on("mouseover", highlight)
-            .on("mouseleave", noHighlight)
-            
-        
-        } */
 
         if (all == false) {
 
@@ -357,15 +305,6 @@ function drawChart_v9() {
             .text("New Vaccinations")
             .attr("text-anchor", "start")
 
-
-        /* g.append("defs").append("SVG:clipPath")
-        .attr("id", "clip")
-        .append("SVG:rect")
-        .attr("width", width )
-        .attr("height", height )
-        .attr("x", 0)
-        .attr("y", 0); */
-
         var sumstat = d3.groups(data, d => d.continent)
         var continents = sumstat.map(function(d){return d[0]});
        
@@ -441,8 +380,6 @@ function drawChart_v9() {
                     (d[1])
             
             })
-            .on("mouseover", highlight)
-            .on("mouseleave", noHighlight)
 
         g.append('g')
             .selectAll("dot")
@@ -610,8 +547,6 @@ function drawChart_v9() {
                             (d[1])
                     
                     })
-                    .on("mouseover", highlight)
-                    .on("mouseleave", noHighlight)
         
                 g.append('g')
                     .selectAll("dot")
