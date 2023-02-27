@@ -1,5 +1,23 @@
 function drawChart_v1() {
     const div_id = "#v1";
+
+    var log = true;
+    document.getElementById('radio').onchange = function() {
+        var markedradio = document.querySelector('input[type="radio"]:checked'); 
+        if (markedradio.id == "log scale")
+        {
+            log = true;
+            
+        }
+        
+        else { log = false;}
+
+        d3.selectAll("svg").remove()
+        draw_viz()
+    }
+    draw_viz()
+    function draw_viz() {
+
     // Clara - Contamination Rate / Population density
     // Definition of the div target dimentions
     let ratio = 2.5; // 3 width = 1 height
@@ -31,9 +49,19 @@ function drawChart_v1() {
             });
     
             // Add X axis
-            var x = d3.scaleLog()
+
+            var x
+            if(log == true){
+                x = d3.scaleLog()
                 .domain([0.1, 10+ d3.max(data, function(d) { return d['population_density']; })])
                 .range([0, width ]);
+            }
+            else {
+                x = d3.scaleLinear()
+                .domain([0, 10+ d3.max(data, function(d) { return d['population_density']; })])
+                .range([0, width ]);
+            }
+            
             g.append("g")
                 .attr("transform", "translate(0," + height + ")")
                 .call(d3.axisBottom(x))
@@ -44,10 +72,19 @@ function drawChart_v1() {
                 .attr("y", height-10)
                 .text("Population Density");
     
-            // Add Y axis        
-            var y = d3.scaleLog()
+            // Add Y axis  
+            var y      
+            if(log == true) {
+                y = d3.scaleLog()
                 .domain([1000, 500+d3.max(data, function(d) { return d['total_cases']; })])
                 .range([height,0 ]);
+            }
+            else {
+                y = d3.scaleLinear()
+                .domain([0, 500+d3.max(data, function(d) { return d['total_cases']; })])
+                .range([height,0 ]);
+            }
+            
     
             g.append("g")
                 .call(d3.axisLeft(y))
@@ -163,6 +200,6 @@ function drawChart_v1() {
                 .on("mouseover", highlight)
                 .on("mouseleave", noHighlight)
         });
-
+    }
 }
 drawChart_v1();
