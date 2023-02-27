@@ -202,7 +202,7 @@ const drawChart = async () => {
         .attr("y", -margin.top / 2 + 5)
         .attr("font-size", "16px")
         .attr("text-anchor", "middle")
-        .text(`Percentage of Population in each Country`);
+        .text(`First Dose`);
 
     second_dose_svg
         .selectAll(".second-dose-bars")
@@ -270,7 +270,7 @@ const drawChart = async () => {
         .attr("y", -margin.top / 2 + 5)
         .attr("font-size", "16px")
         .attr("text-anchor", "middle")
-        .text(`Percentage of Population in each Country`);
+        .text(`Second Dose`);
 
     third_dose_svg
         .selectAll(".third-dose-bars")
@@ -338,7 +338,7 @@ const drawChart = async () => {
         .attr("y", -margin.top / 2 + 5)
         .attr("font-size", "16px")
         .attr("text-anchor", "middle")
-        .text(`Percentage of Population in each Country`);
+        .text(`Third Dose`);
 
     d3.select("#age-select").on("change", function () {
         selected_age = d3.select(this).property("value");
