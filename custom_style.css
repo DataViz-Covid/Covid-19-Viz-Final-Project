@@ -48,7 +48,7 @@ h6 {
 
 #web-detail-id {
 
-    background-image: url('data_graph__virus_Adobe.jpg');
+    background-image: url('One-year-on.jpg');
     padding: 20px;
 
 }
@@ -60,10 +60,10 @@ h6 {
     padding: 20px;
     display: inline-block;
     width: 400px;
-    height: 200px;
+    height: 400px;
     border: 3px solid mediumslateblue;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 
