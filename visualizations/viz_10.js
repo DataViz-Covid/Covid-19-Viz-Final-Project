@@ -1,18 +1,23 @@
 function drawChart_v10() {
     const div_id = "#v10";
     // Clara - Scatter plot of hospital stay duration per age
-    var age_70 = true;
+    var choice = "age_70";
 
     document.getElementById('radio').onchange = function() {
         var markedradio = document.querySelector('input[type="radio"]:checked'); 
         if (markedradio.id == "65 or older")
         {
-            age_70 = false;
+            choice = "age_65";
             
         }
-        else {
-            age_70 = true;
+        else if (markedradio.id == "median age"){
+            choice = "median_age";
         }
+        else if (markedradio.id == "life expectancy"){
+            choice = "life_exepctancy";
+        }
+        else { choice = "age_70";}
+
         d3.selectAll("svg").remove()
         draw_viz()
     }
@@ -51,15 +56,27 @@ function drawChart_v10() {
     
             // Add X axis
             var x
-            if(age_70 == true){
+            if(choice == "age_70"){
                 x = d3.scaleLinear()
                 .domain([0, 4+ d3.max(data, function(d) { return d["aged_70_older"]; })])
+                .range([0, width ]);
+            }
+            else if(choice == "age_65")
+            {
+                x = d3.scaleLinear()
+                .domain([0, 4+ d3.max(data, function(d) { return d["aged_65_older"]; })])
+                .range([0, width ]);
+            }
+            else if(choice == "median_age")
+            {
+                x = d3.scaleLinear()
+                .domain([25, 4+ d3.max(data, function(d) { return d["median_age"]; })])
                 .range([0, width ]);
             }
             else
             {
                 x = d3.scaleLinear()
-                .domain([0, 4+ d3.max(data, function(d) { return d["aged_65_older"]; })])
+                .domain([60, 4+ d3.max(data, function(d) { return d["life_expectancy"]; })])
                 .range([0, width ]);
             }
             g.append("g")
@@ -110,10 +127,24 @@ function drawChart_v10() {
                 tooltip
                     .transition()
                     .duration(500)
-                if (age_70 == true) {
+                if (choice == "age_70") {
                     tooltip
                     .style("opacity", 1)
                     .html("Country: " + d['location']+ '<br> Highest weekly hospital admission rate per million: '+ d['weekly_hosp_admissions_per_million'] +  '<br> 70 or older %: '+ d['aged_70_older'])
+                    .style("left", event.pageX + "px")
+                    .style("top", (event.pageY - 28) + "px")
+                }
+                else if (choice == "median_age") {
+                    tooltip
+                    .style("opacity", 1)
+                    .html("Country: " + d['location']+ '<br> Highest weekly hospital admission rate per million: '+ d['weekly_hosp_admissions_per_million'] +  '<br> median age: '+ d['median_age'])
+                    .style("left", event.pageX + "px")
+                    .style("top", (event.pageY - 28) + "px")
+                }
+                else if (choice == "life_expectancy") {
+                    tooltip
+                    .style("opacity", 1)
+                    .html("Country: " + d['location']+ '<br> Highest weekly hospital admission rate per million: '+ d['weekly_hosp_admissions_per_million'] +  '<br> Life Expectancy: '+ d['life_exepctancy'])
                     .style("left", event.pageX + "px")
                     .style("top", (event.pageY - 28) + "px")
                 }
@@ -144,8 +175,11 @@ function drawChart_v10() {
                 .append("circle")
                 .attr("class", function(d) { return "bubbles "+ normalize_name(d.continent) })
                 .attr("cx", function (d) { 
-                    if(age_70 == true) {return x(d["aged_70_older"]);}
-                    else {return x(d["aged_65_older"]);} } )
+                    if(choice == "age_70") {return x(d["aged_70_older"]);}
+                    else if (choice == "age_65") {return x(d["aged_65_older"]);} 
+                    else if (choice == "median_age") {return x(d["median_age"]);}
+                    else {return x(d["life_expectancy"])} 
+                } )
                 .attr("cy", function (d) { return y(d['weekly_hosp_admissions_per_million']); } )
                 .attr("r",  5 )
                 .style("fill", function (d) { return color(d.continent); } )
