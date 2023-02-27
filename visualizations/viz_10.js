@@ -3,7 +3,7 @@ function drawChart_v10() {
     // Clara - Scatter plot of hospital stay duration per age
     var choice = "age_70";
 
-    document.getElementById('radio').onchange = function() {
+    document.getElementById('radio2').onchange = function() {
         var markedradio = document.querySelector('input[type="radio"]:checked'); 
         if (markedradio.id == "65 or older")
         {

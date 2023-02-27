@@ -5,7 +5,7 @@ function drawChart_v9() {
     var list2 = ["China", "India", "United States", "Japan", "Brazil"];
     var all = false
 
-    document.getElementById('radio').onchange = function() {
+    document.getElementById('radio3').onchange = function() {
         var markedradio = document.querySelector('input[type="radio"]:checked'); 
         if (markedradio.id == "Countries")
         {
