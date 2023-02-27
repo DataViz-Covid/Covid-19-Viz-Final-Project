@@ -1,20 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <script src="https://d3js.org/d3.v6.js"></script>
     <title>Viz 8</title>
+    <style>
+        #country-select {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20%;
+            max-width: 300px;
+            text-align: center;
+        }
+
+
+        #pie-chart {
+            width: 80%;
+            padding-top: 30px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media only screen and (min-width: 768px) {
+            #country-select {
+                max-width: none;
+            }
+        }
+
+
+    </style>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
 </head>
+
+
 <body>
 
-    <div class="assignment-heading">
-        <h1>Viz 8</h1>
-        <h2>TODO</h2>
-        Deniz - Small multiple Pie chart of vax brand distrib per country
-    </div>
 
-    <div id="v8"></div>
-    <script src="./viz_8.js"></script>
+<select id="country-select"></select>
+<svg id="pie-chart"></svg>
+<div id="legend"></div>
+<script src="viz_8.js"></script>
+
 
 </body>
 </html>
+
+

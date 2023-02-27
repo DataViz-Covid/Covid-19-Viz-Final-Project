@@ -1,20 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <script src="https://d3js.org/d3.v6.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <title>Viz 3</title>
+<style>
+    .tooltip {
+        position: absolute;
+        opacity: 0;
+        background-color: #fff;
+        color: #000;
+        border-radius: 5px;
+        padding: 5px;
+        z-index: 4;
+        border: 1px solid #9f9f9f;
+        pointer-events: none;
+    }
+
+
+    .container3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+    }
+    .bar-options {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .radio-btns {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        justify-content: space-between;
+    }
+
+    .bar-charts {
+        display: flex;
+    }
+
+    .bar-charts > div {
+        margin-right: 1rem;
+    }
+    @media screen and (max-width:500px) {
+        .radio-btns{
+            justify-content: center;
+        }
+        .bar-charts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .bar-charts> * {
+            margin-bottom: 10px;
+        }
+    }
+</style>
+
 </head>
 <body>
+<div class="tooltip"></div>
+<div class="container3">
+    <div class="bar-options">
+        <div class="radio-btns">
+            <select name="country" id="age-select">
+                <option value="">Select Age</option>
+                <option value="5-9">5-9</option>
+                <option value="10-14">10-14</option>
+                <option value="15-17">15-17</option>
+                <option value="18-24">18-24</option>
+                <option value="25-49">25-49</option>
+                <option value="50-59">50-59</option>
+                <option selected value="60-69">60-69</option>
+                <option value="70-79">70-79</option>
+                <option value="80+">80+</option>
+            </select>
+        </div>
 
-    <div class="assignment-heading">
-        <h1>Viz 3</h1>
-        <h2>TODO</h2>
-        Deniz - 100% bar graph for shot amount per country
+        <div class="bar-charts">
+            <div id="dose-one"></div>
+            <div id="dose-two"></div>
+            <div id="dose-three"></div>
+        </div>
     </div>
-
-    <div id="v3"></div>
-    <script src="./viz_3.js"></script>
-
+</div>
+<script src="viz_3.js"></script>
 </body>
 </html>

@@ -1,0 +1,207 @@
+﻿body {
+    font-family: 'Fira Sans';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto Slab';
+}
+
+
+.home-banner {
+
+    color: midnightblue;
+    padding: 10px;
+    background-image: url('csm_Corona-GettyImages-1211544068_49c1ed3c44.jpg');
+    background-size: auto;
+    font-size: 50px;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+
+.group-name {
+    align-items: center;
+    color: darkslateblue;
+    background-color: lightsteelblue;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+
+.web-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20%;
+    left: 20%;
+    padding: 20px;
+
+}
+
+
+#web-detail-id {
+
+    background-image: url('data_graph__virus_Adobe.jpg');
+    padding: 20px;
+
+}
+
+
+.web-detail {
+    color: midnightblue;
+    bottom: 20%;
+    padding: 20px;
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    border: 3px solid mediumslateblue;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+.first-assignment-head {
+
+    text-align: center;
+    color: darkslateblue;
+}
+
+
+
+.viz1 , .viz2,.viz3,.viz4,.viz5,.viz6,.viz7,.viz8,.viz9,.viz10,.viz11,.viz12{
+
+
+    color: midnightblue;
+    height: 600px;
+    width: 800px;
+    font-size: 6px;
+    position: relative;
+    align-items: center;
+    bottom: 20%;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+    top: 20%;
+    left: 15%;
+
+
+}
+
+.assignment-heading {
+
+    position: relative;
+    color: darkslateblue;
+    align-items: center;
+    text-align: center;
+}
+
+.viz1-details,.viz2-details,.viz3-details,.viz4-details,.viz5-details,.viz6-details,.viz7-details,.viz8-details,.viz9-details,.viz10-details,.viz11-details,.viz12-details{
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 100px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #339963;
+    left: 200px;
+    text-align: center;
+}
+
+.button1:hover {
+    opacity:70% ;
+    background-color: #339963;
+    color: white;
+}
+
+
+
+footer {
+    width: 100%;
+    display: inline-block;
+    margin: 2em 0;
+    height: 70px;
+    background-color: #008060;
+}
+.copyright {
+    text-align: center;
+    size: 40px;
+    padding-bottom: 10px;
+    width: 30%;
+    float: left;
+}
+
+p {
+    padding-left: 10%;
+    color: white;
+    font-size: 0.7em;
+    line-height: 70px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+
+}
+
+.social {
+    width: 70%;
+    float: right;
+@media (max-width: 600 px) width: 100 %;
+}
+a {
+    float: left;
+    line-height: 70px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+.linked {
+    background-color: #6c8093;
+    font-size: 40px;
+    width: 25%;
+}
+
+.face {
+    background-color:	#93806c;
+    font-size: 40px;
+    width: 25%;
+}
+
+.tweet {
+    background-color: #936c93;
+    font-size: 40px;
+    width: 25%;
+}
+
+.support {
+    background-color: #6c936c;
+    font-size: 0.8em;
+    width: 25%;
+}
