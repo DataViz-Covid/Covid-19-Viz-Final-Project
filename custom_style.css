@@ -9,6 +9,7 @@ h4,
 h5,
 h6 {
     font-family: 'Roboto Slab';
+
 }
 
 
@@ -67,30 +68,22 @@ h6 {
 
 
 
-.first-assignment-head {
-
-    text-align: center;
-    color: darkslateblue;
-}
-
-
 
 .viz1 , .viz2,.viz3,.viz4,.viz5,.viz6,.viz7,.viz8,.viz9,.viz10,.viz11,.viz12{
 
 
     color: midnightblue;
-    height: 600px;
+    height: 800px;
     width: 800px;
     font-size: 6px;
     position: relative;
-    align-items: center;
     bottom: 20%;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
-    display: inline-block;
+    display: flex;
     justify-content: center;
-    top: 20%;
-    left: 15%;
+    left: 170px;
+
 
 
 }
