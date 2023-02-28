@@ -49,14 +49,14 @@ d3.json("visualizations/viz8.json").then(function(data) {
         // Set color scale for pie chart
         var color = d3.scaleOrdinal()
             .domain(pieData.map(function(d) { return d.label; }))
-            .range( d3.schemePaired );
+            .range( d3.schemeSpectral[11]);
 
 
 
         // Define arc for pie chart
         var arc = d3.arc()
-            .outerRadius(radius - 10)
-            .innerRadius(0);
+            .outerRadius(radius)
+            .innerRadius(100);
 
         // Define pie layout
         var pie = d3.pie()
@@ -93,7 +93,7 @@ d3.json("visualizations/viz8.json").then(function(data) {
                 d3.select(this)
                     .transition()
                     .duration(200)
-                    .attr("fill", "darkgreen");
+                    .attr("fill", "#ffb3d9");
             })
             .on("mouseout", function(d) {
                 d3.select(this)
