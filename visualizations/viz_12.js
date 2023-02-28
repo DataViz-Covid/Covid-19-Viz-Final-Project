@@ -64,13 +64,13 @@ function drawChart_v12() {
     // Retrieving European countries
     let european_country_data;
     let european_country_codes;
-    d3.csv("../data/continents.csv").then(function (data) {
+    d3.csv("data/continents.csv").then(function (data) {
         european_country_data = data.filter(country => country["Continent"] === "Europe");
         european_country_codes = european_country_data.map(country => country["Code"]);
     });
 
     // Drawing the map
-    d3.json("../data/countries.geojson").then( function(data) {
+    d3.json("data/countries.geojson").then( function(data) {
         //const european_data
         data.features =  data.features.filter(element => european_country_codes.includes(element.properties["ISO_A3"]));
 
@@ -156,7 +156,7 @@ function drawChart_v12() {
     });
 
     function visualizeMeasure(measure, date){
-        d3.csv("../data/europe_response_to_covid.csv").then( function(data) {
+        d3.csv("data/europe_response_to_covid.csv").then( function(data) {
             // Filtering the data to the current measure
             data = data.filter(row => row['Response_measure'].includes(measure));
 
