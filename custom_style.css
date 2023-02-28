@@ -1,5 +1,6 @@
 ﻿body {
     font-family: 'Fira Sans';
+
 }
 
 h1,
@@ -9,7 +10,7 @@ h4,
 h5,
 h6 {
     font-family: 'Roboto Slab';
-
+text-align: center;
 }
 
 
@@ -197,4 +198,107 @@ a {
     background-color: #6c936c;
     font-size: 0.8em;
     width: 25%;
+}
+
+#country-select {
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    max-width: 300px;
+    text-align: center;
+}
+
+
+#pie-chart {
+    width: 80%;
+    padding-top: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    #country-select {
+        max-width: none;
+    }
+}
+
+
+.tooltip {
+    position: absolute;
+    opacity: 0;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 4;
+    border: 1px solid #9f9f9f;
+    pointer-events: none;
+}
+
+
+.container3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+.bar-options {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.radio-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    justify-content: space-between;
+}
+
+.bar-charts {
+    display: flex;
+}
+
+.bar-charts > div {
+    margin-right: 1rem;
+}
+@media screen and (max-width:500px) {
+    .radio-btns{
+        justify-content: center;
+    }
+    .bar-charts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .bar-charts> * {
+        margin-bottom: 10px;
+    }
+}
+
+#dropdown {
+    padding-bottom: 20px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#chart {
+    width: 100%;
+    max-width: 1000px;
+    height: 700px;
+    padding-top: 20px;
+    padding-left: 100px;
+}
+
+#container {
+
+    width: 100%;
+    max-width: 100px;
 }

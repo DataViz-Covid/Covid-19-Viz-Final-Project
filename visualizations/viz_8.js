@@ -2,7 +2,7 @@ const margin = { top: 30, right: 100, bottom: 50, left: 300 };
 const width = 600 - margin.left - margin.right;
 const height = 400 - margin.top - margin.bottom;
 // Load data from JSON file
-d3.json("viz8.json").then(function(data) {
+d3.json("visualizations/viz8.json").then(function(data) {
     // Extract countries from data
     var countries = data.data.map(function(d) { return d.Country; });
 

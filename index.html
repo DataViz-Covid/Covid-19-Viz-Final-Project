@@ -12,6 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.js"
             integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="https://d3js.org/d3.v6.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://d3js.org/d3-scale-chromatic.v1.js"></script>
 
 </head>
@@ -111,14 +112,14 @@
             <br>
                 <h1>Third Visualization</h1>
             
-            <h1><b><br>Here based on time, we show the total number of people infected by covid and the total number of people hospitalized on the same date. It begins with zero cases prior to covid and gradually increases. As shown by the line graphs, the hospitality rate has one peak that corresponds to the second peak of the cases line. As the pointer moves along the lines, more information on accurate numbers for each of these measures will be displayed. Because the ranges of the two graphs differ, there are two y axes provided for each. As a result, we can compare the flactuations of two graphs using this plot, but for the exact number, we should point to a specific point to get more information.
+            <h1><b><br>Here based on time, we show the total number of people infected by covid and the total number of people hospitalized on the same date. It begins with zero cases prior to covid and gradually increases. As shown by the line graphs, the hospitality rate has one peak that corresponds to the second peak of the cases line. As the pointer moves along the lines, more information on accurate numbers for each of these measures will be displayed. Because the ranges of the two graphs differ, there are two y axes provided for each.
                     
                    </b></h1><br>
-            
-            
-            <div id="line-chart"></div>
 
-            <script src="visualizations/viz_2.js"></script>
+
+                <div id="viz2"></div>
+
+                <script src="visualizations/viz_2.js"></script>
             <hr>
             <br>
             </div>
@@ -243,32 +244,32 @@
                     <br>
                     In this series of bar charts, we will compare the percentage of the population in each country who receives each dose of covid vaccines (first, second, and third dose). You can also change the age range using the dropdown menu to see which age group in which country receives the most vaccine shots.<br>
         </b></h1><br>
-            
-        <div class="tooltip"></div>
-        <div class="container3">
-            <div class="bar-options">
-                <div class="radio-btns">
-                    <select name="country" id="age-select">
-                        <option value="">Select Age</option>
-                        <option value="5-9">5-9</option>
-                        <option value="10-14">10-14</option>
-                        <option value="15-17">15-17</option>
-                        <option value="18-24">18-24</option>
-                        <option value="25-49">25-49</option>
-                        <option value="50-59">50-59</option>
-                        <option selected value="60-69">60-69</option>
-                        <option value="70-79">70-79</option>
-                        <option value="80+">80+</option>
-                    </select>
+
+                <div class="tooltip"></div>
+                <div class="container3">
+                    <div class="bar-options">
+                        <div class="radio-btns">
+                            <select name="country" id="age-select">
+                                <option value="">Select Age</option>
+                                <option value="5-9">5-9</option>
+                                <option value="10-14">10-14</option>
+                                <option value="15-17">15-17</option>
+                                <option value="18-24">18-24</option>
+                                <option value="25-49">25-49</option>
+                                <option value="50-59">50-59</option>
+                                <option selected value="60-69">60-69</option>
+                                <option value="70-79">70-79</option>
+                                <option value="80+">80+</option>
+                            </select>
+                        </div>
+
+                        <div class="bar-charts">
+                            <div id="dose-one"></div>
+                            <div id="dose-two"></div>
+                            <div id="dose-three"></div>
+                        </div>
+                    </div>
                 </div>
-        
-                <div class="bar-charts">
-                    <div id="dose-one"></div>
-                    <div id="dose-two"></div>
-                    <div id="dose-three"></div>
-                </div>
-            </div>
-        </div>
             <script src="visualizations/viz_3.js"></script>
     
             <hr>
@@ -283,8 +284,11 @@
             <h1><b>
                     <br>
                     Another graph is based on covid-19 vaccines, but this time we'll compare vaccine manufacturers. Choose a country from the dropdown menu, and then compare the vaccine usage in each of these countries. You can point to each part to see the percentage of the whole for each vaccine manufacturer in order to get the exact percentage of each fraction.</b></h1><br>
-            
-            
+
+
+                <select id="country-select"></select>
+                <svg id="pie-chart"></svg>
+                <div id="legend"></div>
             <script src="visualizations/viz_8.js"></script>
     
             <hr>
@@ -351,8 +355,8 @@
             </b></h1><br>
             
             <svg id="chart"></svg>
-
             <div id="dropdown"></div>
+
             <script src="visualizations/viz_11.js"></script>
     
             <hr>

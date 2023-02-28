@@ -1,11 +1,21 @@
-const drawChart = async () => {
+function drawChart_v11  (){
     const width = 300;
     const height = 200;
     const margin = { top: 20, right: 20, bottom: 40, left: 40 };
 
-    const first_dose = await d3.csv("first_dose_by_age.csv");
-    const second_dose = await d3.csv("second_dose_by_age.csv");
-    const third_dose = await d3.csv("third_dose_by_age.csv");
+    function readCsvFile(filename) {
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", filename, false); // synchronous request
+        xhr.send();
+        const csvContent = xhr.responseText;
+        return d3.csvParse(csvContent);
+    }
+
+    const third_dose = readCsvFile("visualizations/third_dose_by_age.csv");
+    const first_dose = readCsvFile("visualizations/first_dose_by_age.csv");
+    const second_dose = readCsvFile("visualizations/second_dose_by_age.csv");
+
+
 
     let selected_age = "60-69";
     let selected_dose = first_dose;
@@ -443,4 +453,4 @@ const drawChart = async () => {
     });
 };
 
-drawChart();
+drawChart_v11();
