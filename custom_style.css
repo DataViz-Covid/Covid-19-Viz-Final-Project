@@ -202,7 +202,6 @@ a {
 
 #country-select {
     position: absolute;
-
     left: 50%;
     transform: translateX(-50%);
     width: 20%;
@@ -281,24 +280,30 @@ a {
 }
 
 #dropdown {
-    padding-bottom: 20px;
-    position: absolute;
+
     top: 20px;
-    left: 50%;
+    position:relative;
     transform: translateX(-50%);
     text-align: center;
+    margin-left: 600px;
+    margin-bottom: 50px;
+    width: 20%;
+    max-width: 300px;
+    display: inline-block;
 }
 
 #chart {
     width: 100%;
     max-width: 1000px;
-    height: 700px;
+    height: 600px;
     padding-top: 20px;
     padding-left: 150px;
+    padding-bottom: 20px;
 }
 
 #container {
 
     width: 100%;
-    max-width: 100px;
+    display: inline-block;
+
 }
