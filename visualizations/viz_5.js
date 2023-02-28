@@ -157,7 +157,7 @@ function drawChart_v5() {
             .text(function(d,i) {
                 var extent = colors.invertExtent(d);
                 //extent will be a two-element array, format it however you want:
-                var format = d3.format("0.2f");
+                var format = d3.format("d");
                 if( i == 0 ) return "< " + format(+extent[1]);
                 if(i == 8) return "> " + format(+extent[0]);
                 return format(+extent[0]) + " - " + format(+extent[1]);
