@@ -24,6 +24,39 @@ function drawChart_v2() {
         .x (d => xScale (new Date (d.date)))
         .y (d => y2Scale (d.hospitalized));
 
+    var tooltip = d3.select('#viz2')
+        .append("div")
+        .style("position", "absolute")
+        .style("opacity", 0)
+        .style("background-color", "rgb(211,211,211)")
+        .style("border-radius", "5px")
+        .style("padding", "10px")
+        .attr("class", "tooltip")
+        .style("width", "auto")
+        .style("height", "auto")
+        .style("pointer-events", "none")
+
+    // -2- Create 3 functions to show / update (when mouse move but stay on same circle) / hide the tooltip
+    var showTooltip = function(event, d) {
+        tooltip
+            .transition()
+            .duration(500)
+        tooltip
+            .style("opacity", 1)
+            .html("date: " + d['date']+ '<br> Infected cases: '+ d['cases'] +  '<br> Hospitalized Cases: '+ d['hospitalized'])
+            .style("left", event.pageX + "px")
+            .style("top", (event.pageY - 28) + "px")
+    }
+
+
+
+    var hideTooltip = function(d) {
+        tooltip
+            .transition()
+            .duration(200)
+            .style("opacity", 0)
+    }
+
     // Load the data
     d3.json (dataUrl).then (data => {
         // Format the data
@@ -100,6 +133,8 @@ function drawChart_v2() {
             .attr('stroke-width', 1)
             .attr('d', lineCases)
             .append("title")  // append a title element to the path
+            .on("mouseover", showTooltip )
+            .on("mouseleave", hideTooltip )
 
 
         svg.append('path')
@@ -111,7 +146,31 @@ function drawChart_v2() {
             .append("title")  // append a title element to the path
 
 
-
+        svg.append('g')
+            .selectAll("dot")
+            .data(data)
+            .enter()
+            .append("circle")
+            .attr("cx", function (d) { return xScale (new Date (d.date))}) 
+            .attr("cy", function (d) { return y1Scale (d.cases); } )
+            .attr("r",  0.5 )
+            .style("fill", "#cc0099" )
+            // -3- Trigger the functions for hover
+            .on("mouseover", showTooltip )
+            .on("mouseleave", hideTooltip )
+        
+        svg.append('g')
+            .selectAll("dot")
+            .data(data)
+            .enter()
+            .append("circle")
+            .attr("cx", function (d) { return xScale (new Date (d.date))}) 
+            .attr("cy", function (d) { return y2Scale (d.hospitalized); } )
+            .attr("r",  0.5 )
+            .style("fill", "#006699" )
+            // -3- Trigger the functions for hover
+            .on("mouseover", showTooltip )
+            .on("mouseleave", hideTooltip )
 
 
 // Add a text element to the plot
