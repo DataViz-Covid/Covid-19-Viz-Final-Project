@@ -82,8 +82,8 @@ function drawChart_v5() {
             
 
             const colors = d3.scaleThreshold()
-                .domain([10, 50, 100, 500, 1000, 2000, 3000, 4000, max_count])
-                .range(d3.schemeGreens[9])
+                .domain([50, 200, 500, 1000, 2000, 3000, 4000, 5000, max_count])
+                .range(d3.schemeBlues[9])
 
 
             // Three function that change the tooltip when user hover / move / leave a cell
@@ -157,7 +157,7 @@ function drawChart_v5() {
             .text(function(d,i) {
                 var extent = colors.invertExtent(d);
                 //extent will be a two-element array, format it however you want:
-                var format = d3.format("0.2f");
+                var format = d3.format("d");
                 if( i == 0 ) return "< " + format(+extent[1]);
                 if(i == 8) return "> " + format(+extent[0]);
                 return format(+extent[0]) + " - " + format(+extent[1]);
