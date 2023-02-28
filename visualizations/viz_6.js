@@ -12,14 +12,17 @@ function drawChart_v6() {
         .style("display", "flex")
         .style("flex-direction", "column")
         .style("align-items", "flex-start")
+        .style("margin-left", "250px")
         .style("justify-content", "space-between")
         .style("height", "70vh")
-        .style("width", "100%");
+        .style("width", "100%")
+
+        
 
     let main_win_size = 500; //d3.select(div_id).node().getBoundingClientRect().height;
     let main_win_width = d3.select(div_id).node().getBoundingClientRect().width;
 
-    d3.json('../data/gdp_map.json').then(world => {
+    d3.json("data/gdp_map.json").then(world => {
         // exclude antarctica
         world.objects.countries.geometries.splice(
             world.objects.countries.geometries.findIndex(d => d.properties.ISO_A2 === 'AQ'), 1);
@@ -60,14 +63,15 @@ function drawChart_v6() {
 
         d3.selectAll('.cartogram')
             .style('position', 'absolute')
-            .style('top', '20vh');
+            .style('top', '1334.5vh');
 
         d3.selectAll('#cartogram_2019').selectAll('div')
-            .style('background-color', 'white')
+            .style('background-color', '#dee6e7')
             .style('border-right-style', 'solid')
             .style('border-right-color', 'black')
             .style('border-right-width', '3px')
             .style('width', main_win_size + 'px');
+            
 
         d3.selectAll('#cartogram_2019').selectAll('div').selectAll('svg')
             .style('width', (main_win_size) + 'px');
@@ -84,14 +88,14 @@ function drawChart_v6() {
         const sliderG = d3.select(div_id).append('svg')
             .attr('width', 2*main_win_size)
             .append("g")
-            .attr("transform", "translate(200,8)");
+            .attr("transform", "translate(200,58)");
         sliderG.call(slider);
 
         function setLeftDivWidth(w){
             // Set div width (to change background)
             d3.selectAll('#cartogram_2019')
                 .selectAll('div')
-                .style('width', w + 'px');
+                .style('width', w + 'px')
 
             // Set map svg width to crop what is shown
             d3.selectAll('#cartogram_2019')
