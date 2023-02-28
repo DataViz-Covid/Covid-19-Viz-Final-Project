@@ -46,7 +46,7 @@ function drawChart_v7() {
     }
     
     
-    d3.csv("../data_clean/viz7.csv", function(d){
+    d3.csv("./data_clean/viz7.csv", function(d){
         return { date : d3.timeParse("%Y-%m-%d")(d.date), location : d.location , new_cases : d.new_cases }
       }).then( function(data) {
 
