@@ -44,11 +44,13 @@ function drawChart_v6() {
                 .label(({ properties: p }) => `GDP of ${p.NAME} (${p.ISO_A2})`)
                 .units(' per capita')
                 .valFormatter(d3.format('$,.0f'))
-                (document.getElementById('cartogram_' + year));
+                (document.getElementById('cartogram_' + year))
+                //.iterations(10)
+            ;
 
             function getGDPPerCapita({ properties: p }) {
                 const col = 'gdp_' + year;
-                return p[col] > 0? p[col] / p.POP_EST : 10;
+                return p[col] > 0? p[col] / p.POP_EST : 50;
             }
         }
 
