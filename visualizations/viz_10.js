@@ -4,7 +4,7 @@ function drawChart_v10() {
     var choice = "age_70";
 
     document.getElementById('radio2').onchange = function() {
-        var markedradio = document.querySelector('input[type="radio"]:checked'); 
+        var markedradio = document.querySelector('input[name="radio2"]:checked'); 
         if (markedradio.id == "65 or older")
         {
             choice = "age_65";

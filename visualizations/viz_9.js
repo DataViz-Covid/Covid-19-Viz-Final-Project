@@ -6,8 +6,8 @@ function drawChart_v9() {
     var all = false
 
     document.getElementById('radio3').onchange = function() {
-        var markedradio = document.querySelector('input[type="radio"]:checked'); 
-        if (markedradio.id == "Countries")
+        var markedradio = document.querySelector('input[name="radio3"]:checked'); 
+        if (markedradio.id == "Country")
         {
             document.getElementById('check').style="display: block"
             document.getElementById('cont').style="display: none"

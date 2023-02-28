@@ -2,7 +2,7 @@ function drawChart_v7() {
     const div_id = "#v7";
 
     document.getElementById('radio').onchange = function() {
-        var markedradio = document.querySelector('input[type="radio"]:checked'); 
+        var markedradio = document.querySelector('input[name="radio"]:checked'); 
         if (markedradio.id == "Countries")
         {
             d3.select("#svg7").remove()

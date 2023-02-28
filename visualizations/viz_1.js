@@ -3,7 +3,7 @@ function drawChart_v1() {
 
     var log = true;
     document.getElementById('radio1').onchange = function() {
-        var markedradio = document.querySelector('input[type="radio"]:checked'); 
+        var markedradio = document.querySelector('input[name="radio1"]:checked'); 
         if (markedradio.id == "log scale")
         {
             log = true;
