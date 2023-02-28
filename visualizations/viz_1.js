@@ -42,7 +42,7 @@ function drawChart_v1() {
         return name.replaceAll(' ','').replaceAll('.', '').replaceAll('\'', '');
     }
 
-        d3.csv("./data_clean/viz1.csv").then( function(data) {
+        d3.csv("data_clean/viz1.csv").then( function(data) {
 
             data.forEach(function(d) {
                 d['total_cases'] = +d['total_cases'];

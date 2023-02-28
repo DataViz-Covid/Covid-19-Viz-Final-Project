@@ -41,7 +41,7 @@ function drawChart_v5() {
     let countries;
 
     // Load external data and boot
-    d3.json("./data/countries.json").then( function(data) {
+    d3.json("data/countries.json").then( function(data) {
         
         // Map and projection
         const projection = d3.geoMercator().translate([width/2, height/1.8]);
@@ -67,7 +67,7 @@ function drawChart_v5() {
     
 
 
-        d3.csv("./data_clean/viz1.csv").then( function(dat) {
+        d3.csv("data_clean/viz1.csv").then( function(dat) {
 
             dat.forEach(function(d) {
                 d['total_deaths_per_million'] = +d['total_deaths_per_million'];

@@ -46,7 +46,7 @@ function drawChart_v7() {
     }
     
     
-    d3.csv("./data_clean/viz7.csv", function(d){
+    d3.csv("data_clean/viz7.csv", function(d){
         return { date : d3.timeParse("%Y-%m-%d")(d.date), location : d.location , new_cases : d.new_cases }
       }).then( function(data) {
 
@@ -226,7 +226,7 @@ function drawChart_v7() {
     let normalize_name = function (name) {
         return name.replaceAll(' ','').replaceAll('.', '').replaceAll('\'', '');
     }
-    d3.csv("../data_clean/viz7_cont.csv", function(d){
+    d3.csv("data_clean/viz7_cont.csv", function(d){
         return { date : d3.timeParse("%Y-%m-%d")(d.date), continent : d.continent , new_cases : d.new_cases }
       }).then( function(data) {
 
@@ -400,7 +400,7 @@ function drawChart_v7() {
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");     
 
 
-    d3.csv("../data_clean/viz7_world.csv", function(d){
+    d3.csv("data_clean/viz7_world.csv", function(d){
         return { date : d3.timeParse("%Y-%m-%d")(d.date), new_cases : d.new_cases }
       }).then( function(data) {
 

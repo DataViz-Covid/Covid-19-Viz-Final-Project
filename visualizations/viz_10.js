@@ -45,7 +45,7 @@ function drawChart_v10() {
         return name.replaceAll(' ','').replaceAll('.', '').replaceAll('\'', '');
     }
 
-        d3.csv("./data_clean/viz10.csv").then( function(data) {
+        d3.csv("data_clean/viz10.csv").then( function(data) {
 
             data.forEach(function(d) {
                 d['weekly_hosp_admissions_per_million'] = +d['weekly_hosp_admissions_per_million'];

@@ -78,7 +78,7 @@ function drawChart_v9() {
     }
     
     
-    d3.csv("./data_clean/viz9.csv", function(d){
+    d3.csv("data_clean/viz9.csv", function(d){
         return { date : d3.timeParse("%Y-%m-%d")(d.date), location : d.location , new_vaccinations : d.new_vaccinations }
       }).then( function(data) {
 
@@ -263,7 +263,7 @@ function drawChart_v9() {
     let normalize_name = function (name) {
         return name.replaceAll(' ','').replaceAll('.', '').replaceAll('\'', '');
     }
-    d3.csv("./data_clean/viz9_cont.csv", function(d){
+    d3.csv("data_clean/viz9_cont.csv", function(d){
         return { date : d3.timeParse("%Y-%m-%d")(d.date), continent : d.continent , new_vaccinations : d.new_vaccinations }
       }).then( function(data) {
 
@@ -429,7 +429,7 @@ function drawChart_v9() {
       
         let g = svg.append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")"); 
-            d3.csv("./data_clean/viz9.csv", function(d){
+            d3.csv("data_clean/viz9.csv", function(d){
                 return { date : d3.timeParse("%Y-%m-%d")(d.date), continent: d.continent, location : d.location , new_vaccinations : d.new_vaccinations }
                 }).then( function(data) {
         
