@@ -82,8 +82,8 @@ function drawChart_v5() {
             
 
             const colors = d3.scaleThreshold()
-                .domain([10, 50, 100, 500, 1000, 2000, 3000, 4000, max_count])
-                .range(d3.schemeGreens[9])
+                .domain([50, 200, 500, 1000, 2000, 3000, 4000, 5000, max_count])
+                .range(d3.schemeBlues[9])
 
 
             // Three function that change the tooltip when user hover / move / leave a cell
