@@ -303,9 +303,9 @@ a {
     padding-bottom: 20px;
 }
 
-#container {
+#container{
 
-    width: 100%;
+    position: center;
     display: inline-block;
-
+margin-left: 130px;
 }
