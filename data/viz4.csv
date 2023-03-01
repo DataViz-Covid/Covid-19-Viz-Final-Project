@@ -1,0 +1,664 @@
+from,to,value
+United States,contaminated,100776291.0
+United States,dead,1092956.0
+United States,healthy,336103944.0
+Brazil,contaminated,36331281.0
+Brazil,dead,693853.0
+Brazil,healthy,213925798.0
+India,contaminated,44679873.0
+India,dead,530705.0
+India,healthy,1416111710.0
+Russia,contaminated,21490515.0
+Russia,dead,385789.0
+Russia,healthy,143941734.0
+Mexico,contaminated,7234467.0
+Mexico,dead,331099.0
+Mexico,healthy,126841922.0
+Peru,contaminated,4458643.0
+Peru,dead,218232.0
+Peru,healthy,33613124.0
+United Kingdom,contaminated,24135084.0
+United Kingdom,dead,214878.0
+United Kingdom,healthy,67079180.0
+Italy,contaminated,25143705.0
+Italy,dead,184642.0
+Italy,healthy,58668188.0
+France,contaminated,39334073.0
+France,dead,162031.0
+France,healthy,67488938.0
+Germany,contaminated,37369866.0
+Germany,dead,161465.0
+Germany,healthy,83046910.0
+Indonesia,contaminated,6719815.0
+Indonesia,dead,160612.0
+Indonesia,healthy,275180120.0
+Iran,contaminated,7561140.0
+Iran,dead,144685.0
+Iran,healthy,88261198.0
+Colombia,contaminated,6336660.0
+Colombia,dead,141881.0
+Colombia,healthy,51590266.0
+Argentina,contaminated,9891139.0
+Argentina,dead,130124.0
+Argentina,healthy,45250076.0
+Ukraine,contaminated,5662732.0
+Ukraine,dead,118689.0
+Ukraine,healthy,39464366.0
+Poland,contaminated,6368479.0
+Poland,dead,118533.0
+Poland,healthy,39620078.0
+Spain,contaminated,13684258.0
+Spain,dead,117095.0
+Spain,healthy,47324442.0
+South Africa,contaminated,4049202.0
+South Africa,dead,102568.0
+South Africa,healthy,59688748.0
+Turkey,contaminated,16919638.0
+Turkey,dead,101203.0
+Turkey,healthy,85138842.0
+Romania,contaminated,3308480.0
+Romania,dead,67374.0
+Romania,healthy,19524522.0
+Philippines,contaminated,4064443.0
+Philippines,dead,65385.0
+Philippines,healthy,115428238.0
+Chile,contaminated,5037527.0
+Chile,dead,63172.0
+Chile,healthy,19477392.0
+Japan,contaminated,29234677.0
+Japan,dead,57274.0
+Japan,healthy,123837148.0
+Canada,contaminated,4505142.0
+Canada,dead,49238.0
+Canada,healthy,38355852.0
+Hungary,contaminated,2185816.0
+Hungary,dead,48495.0
+Hungary,healthy,9870314.0
+Vietnam,contaminated,11525231.0
+Vietnam,dead,43186.0
+Vietnam,healthy,98100484.0
+Czechia,contaminated,4579875.0
+Czechia,dead,42131.0
+Czechia,healthy,10409728.0
+Bulgaria,contaminated,1292104.0
+Bulgaria,dead,38108.0
+Bulgaria,healthy,6705739.0
+Malaysia,contaminated,5026677.0
+Malaysia,dead,36853.0
+Malaysia,healthy,33864510.0
+Ecuador,contaminated,1040463.0
+Ecuador,dead,35940.0
+Ecuador,healthy,17929122.0
+Greece,contaminated,5548487.0
+Greece,dead,34779.0
+Greece,healthy,10315414.0
+Thailand,contaminated,4721808.0
+Thailand,dead,33594.0
+Thailand,healthy,71629836.0
+Belgium,contaminated,4668248.0
+Belgium,dead,33228.0
+Belgium,healthy,11589467.0
+South Korea,contaminated,29116800.0
+South Korea,dead,32219.0
+South Korea,healthy,51751370.0
+Pakistan,contaminated,1575772.0
+Pakistan,dead,30636.0
+Pakistan,healthy,235763592.0
+Bangladesh,contaminated,2037125.0
+Bangladesh,dead,29440.0
+Bangladesh,healthy,171127488.0
+Tunisia,contaminated,1147571.0
+Tunisia,dead,29284.0
+Tunisia,healthy,12297548.0
+Portugal,contaminated,5554058.0
+Portugal,dead,25714.0
+Portugal,healthy,10219429.0
+Iraq,contaminated,2465107.0
+Iraq,dead,25373.0
+Iraq,healthy,44445378.0
+Egypt,contaminated,515645.0
+Egypt,dead,24801.0
+Egypt,healthy,110940494.0
+Netherlands,contaminated,8580083.0
+Netherlands,dead,23079.0
+Netherlands,healthy,17517862.0
+Bolivia,contaminated,1161018.0
+Bolivia,dead,22299.0
+Bolivia,healthy,12179516.0
+Sweden,contaminated,2674862.0
+Sweden,dead,21827.0
+Sweden,healthy,10505695.0
+Austria,contaminated,5705093.0
+Austria,dead,21443.0
+Austria,healthy,8896731.0
+Slovakia,contaminated,2657292.0
+Slovakia,dead,20823.0
+Slovakia,healthy,5601809.0
+Guatemala,contaminated,1204132.0
+Guatemala,dead,20001.0
+Guatemala,healthy,17803912.0
+Paraguay,contaminated,792215.0
+Paraguay,dead,19688.0
+Paraguay,healthy,6741369.0
+Myanmar,contaminated,633683.0
+Myanmar,dead,19490.0
+Myanmar,healthy,54140332.0
+Kazakhstan,contaminated,1488306.0
+Kazakhstan,dead,19057.0
+Kazakhstan,healthy,19359884.0
+Croatia,contaminated,1263901.0
+Croatia,dead,17596.0
+Croatia,healthy,3995169.0
+Serbia,contaminated,2446253.0
+Serbia,dead,17519.0
+Serbia,healthy,6836509.0
+Australia,contaminated,11131707.0
+Australia,dead,17052.0
+Australia,healthy,26143306.0
+Georgia,contaminated,1808820.0
+Georgia,dead,16897.0
+Georgia,healthy,3710591.0
+Sri Lanka,contaminated,671891.0
+Sri Lanka,dead,16817.0
+Sri Lanka,healthy,21798516.0
+Morocco,contaminated,1271595.0
+Morocco,dead,16294.0
+Morocco,healthy,37425388.0
+Bosnia and Herzegovina,contaminated,400992.0
+Bosnia and Herzegovina,dead,16227.0
+Bosnia and Herzegovina,healthy,3201076.0
+Taiwan,contaminated,8847360.0
+Taiwan,dead,15253.0
+Taiwan,healthy,23862890.0
+Switzerland,contaminated,4399516.0
+Switzerland,dead,14173.0
+Switzerland,healthy,8712125.0
+Jordan,contaminated,1746997.0
+Jordan,dead,14122.0
+Jordan,healthy,11257631.0
+Israel,contaminated,4763676.0
+Israel,dead,12037.0
+Israel,healthy,9424926.0
+Nepal,contaminated,1001000.0
+Nepal,dead,12019.0
+Nepal,healthy,30523548.0
+Moldova,contaminated,596550.0
+Moldova,dead,11933.0
+Moldova,healthy,3249127.0
+Hong Kong,contaminated,2625633.0
+Hong Kong,dead,11807.0
+Hong Kong,healthy,7465249.0
+Honduras,contaminated,465915.0
+Honduras,dead,11071.0
+Honduras,healthy,10410716.0
+Lebanon,contaminated,1222515.0
+Lebanon,dead,10746.0
+Lebanon,healthy,5468252.0
+Azerbaijan,contaminated,826401.0
+Azerbaijan,dead,10008.0
+Azerbaijan,healthy,10338062.0
+North Macedonia,contaminated,345603.0
+North Macedonia,dead,9614.0
+North Macedonia,healthy,2074378.0
+Saudi Arabia,contaminated,827004.0
+Saudi Arabia,dead,9518.0
+Saudi Arabia,healthy,36389788.0
+Lithuania,contaminated,1288374.0
+Lithuania,dead,9481.0
+Lithuania,healthy,2731096.0
+Costa Rica,contaminated,1161687.0
+Costa Rica,dead,9072.0
+Costa Rica,healthy,5162692.0
+Armenia,contaminated,445976.0
+Armenia,dead,8716.0
+Armenia,healthy,2763040.0
+Panama,contaminated,1023778.0
+Panama,dead,8567.0
+Panama,healthy,4391448.0
+Cuba,contaminated,1111993.0
+Cuba,dead,8530.0
+Cuba,healthy,11195138.0
+Ireland,contaminated,1687668.0
+Ireland,dead,8293.0
+Ireland,healthy,5006522.0
+Finland,contaminated,1438205.0
+Finland,dead,7933.0
+Finland,healthy,5524879.0
+Afghanistan,contaminated,207559.0
+Afghanistan,dead,7849.0
+Afghanistan,healthy,41113074.0
+Denmark,contaminated,3385836.0
+Denmark,dead,7758.0
+Denmark,healthy,5866743.0
+Ethiopia,contaminated,498001.0
+Ethiopia,dead,7572.0
+Ethiopia,healthy,123364784.0
+Uruguay,contaminated,1011988.0
+Uruguay,dead,7562.0
+Uruguay,healthy,3407672.0
+Belarus,contaminated,994037.0
+Belarus,dead,7118.0
+Belarus,healthy,9520720.0
+Slovenia,contaminated,1307442.0
+Slovenia,dead,7008.0
+Slovenia,healthy,2105827.0
+Algeria,contaminated,271228.0
+Algeria,dead,6881.0
+Algeria,healthy,44889466.0
+Libya,contaminated,507142.0
+Libya,dead,6437.0
+Libya,healthy,6799470.0
+Latvia,contaminated,973830.0
+Latvia,dead,6161.0
+Latvia,healthy,1838332.0
+Venezuela,contaminated,550522.0
+Venezuela,dead,5832.0
+Venezuela,healthy,28290036.0
+Palestine,contaminated,703228.0
+Palestine,dead,5708.0
+Palestine,healthy,5238660.0
+Kenya,contaminated,342499.0
+Kenya,dead,5688.0
+Kenya,healthy,54016108.0
+Zimbabwe,contaminated,259981.0
+Zimbabwe,dead,5637.0
+Zimbabwe,healthy,16309265.0
+China,contaminated,1950933.0
+China,dead,5249.0
+China,healthy,1425876862.0
+Sudan,contaminated,63686.0
+Sudan,dead,4994.0
+Sudan,healthy,46864212.0
+Norway,contaminated,1475077.0
+Norway,dead,4670.0
+Norway,healthy,5424984.0
+Oman,contaminated,399154.0
+Oman,dead,4628.0
+Oman,healthy,4567044.0
+Dominican Republic,contaminated,655540.0
+Dominican Republic,dead,4384.0
+Dominican Republic,healthy,11220053.0
+Trinidad and Tobago,contaminated,186033.0
+Trinidad and Tobago,dead,4283.0
+Trinidad and Tobago,healthy,1522477.0
+El Salvador,contaminated,201785.0
+El Salvador,dead,4230.0
+El Salvador,healthy,6327933.0
+Namibia,contaminated,170295.0
+Namibia,dead,4082.0
+Namibia,healthy,2558860.0
+Zambia,contaminated,334425.0
+Zambia,dead,4024.0
+Zambia,healthy,20009622.0
+Uganda,contaminated,169985.0
+Uganda,dead,3630.0
+Uganda,healthy,47242328.0
+Albania,contaminated,333806.0
+Albania,dead,3595.0
+Albania,healthy,2835128.0
+Jamaica,contaminated,152758.0
+Jamaica,dead,3461.0
+Jamaica,healthy,2820460.0
+Kosovo,contaminated,272283.0
+Kosovo,dead,3202.0
+Kosovo,healthy,1775711.0
+Syria,contaminated,57423.0
+Syria,dead,3163.0
+Syria,healthy,22118916.0
+Nigeria,contaminated,266381.0
+Nigeria,dead,3155.0
+Nigeria,healthy,218534906.0
+Cambodia,contaminated,138584.0
+Cambodia,dead,3056.0
+Cambodia,healthy,16761739.0
+Kyrgyzstan,contaminated,206557.0
+Kyrgyzstan,dead,2991.0
+Kyrgyzstan,healthy,6624639.0
+Estonia,contaminated,611891.0
+Estonia,dead,2854.0
+Estonia,healthy,1320356.0
+Botswana,contaminated,327860.0
+Botswana,dead,2794.0
+Botswana,healthy,2624712.0
+Montenegro,contaminated,284756.0
+Montenegro,dead,2791.0
+Montenegro,healthy,621500.0
+Malawi,contaminated,88220.0
+Malawi,dead,2685.0
+Malawi,healthy,20399948.0
+Kuwait,contaminated,662747.0
+Kuwait,dead,2570.0
+Kuwait,healthy,4263746.0
+United Arab Emirates,contaminated,1047008.0
+United Arab Emirates,dead,2348.0
+United Arab Emirates,healthy,9436442.0
+New Zealand,contaminated,2094855.0
+New Zealand,dead,2331.0
+New Zealand,healthy,5180627.0
+Mozambique,contaminated,230970.0
+Mozambique,dead,2230.0
+Mozambique,healthy,32965060.0
+Yemen,contaminated,11945.0
+Yemen,dead,2159.0
+Yemen,healthy,33692294.0
+Mongolia,contaminated,1007266.0
+Mongolia,dead,2136.0
+Mongolia,healthy,3394101.0
+Senegal,contaminated,88900.0
+Senegal,dead,1968.0
+Senegal,healthy,17312516.0
+Cameroon,contaminated,123993.0
+Cameroon,dead,1965.0
+Cameroon,healthy,27910612.0
+Angola,contaminated,105095.0
+Angola,dead,1930.0
+Angola,healthy,35585136.0
+Singapore,contaminated,2202214.0
+Singapore,dead,1711.0
+Singapore,healthy,5633600.0
+Uzbekistan,contaminated,249217.0
+Uzbekistan,dead,1637.0
+Uzbekistan,healthy,34624374.0
+Bahrain,contaminated,698737.0
+Bahrain,dead,1539.0
+Bahrain,healthy,1469159.0
+Rwanda,contaminated,132920.0
+Rwanda,dead,1467.0
+Rwanda,healthy,13773768.0
+Democratic Republic of Congo,contaminated,95173.0
+Democratic Republic of Congo,dead,1462.0
+Democratic Republic of Congo,healthy,99007292.0
+Ghana,contaminated,171048.0
+Ghana,dead,1461.0
+Ghana,healthy,33472948.0
+Eswatini,contaminated,74021.0
+Eswatini,dead,1422.0
+Eswatini,healthy,1198836.0
+Madagascar,contaminated,67735.0
+Madagascar,dead,1416.0
+Madagascar,healthy,29608886.0
+Suriname,contaminated,81581.0
+Suriname,dead,1393.0
+Suriname,healthy,615260.0
+Somalia,contaminated,27300.0
+Somalia,dead,1361.0
+Somalia,healthy,17594786.0
+Guyana,contaminated,72163.0
+Guyana,dead,1286.0
+Guyana,healthy,806155.0
+Cyprus,contaminated,631111.0
+Cyprus,dead,1258.0
+Cyprus,healthy,893491.0
+Luxembourg,contaminated,311746.0
+Luxembourg,dead,1178.0
+Luxembourg,healthy,645245.0
+Mauritius,contaminated,289980.0
+Mauritius,dead,1041.0
+Mauritius,healthy,1297396.0
+Mauritania,contaminated,63425.0
+Mauritania,dead,997.0
+Mauritania,healthy,4734152.0
+Fiji,contaminated,68702.0
+Fiji,dead,881.0
+Fiji,healthy,928007.0
+Haiti,contaminated,33893.0
+Haiti,dead,860.0
+Haiti,healthy,11583283.0
+Tanzania,contaminated,42351.0
+Tanzania,dead,845.0
+Tanzania,healthy,65496062.0
+Bahamas,contaminated,37491.0
+Bahamas,dead,833.0
+Bahamas,healthy,408323.0
+Cote d'Ivoire,contaminated,87941.0
+Cote d'Ivoire,dead,831.0
+Cote d'Ivoire,healthy,28158886.0
+Malta,contaminated,116384.0
+Malta,dead,815.0
+Malta,healthy,531663.0
+Laos,contaminated,217797.0
+Laos,dead,758.0
+Laos,healthy,7527961.0
+Mali,contaminated,32770.0
+Mali,dead,743.0
+Mali,healthy,22592112.0
+Lesotho,contaminated,34490.0
+Lesotho,dead,706.0
+Lesotho,healthy,2304414.0
+Belize,contaminated,69946.0
+Belize,dead,688.0
+Belize,healthy,403909.0
+Qatar,contaminated,489428.0
+Qatar,dead,685.0
+Qatar,healthy,2693761.0
+Papua New Guinea,contaminated,46663.0
+Papua New Guinea,dead,669.0
+Papua New Guinea,healthy,10141287.0
+French Polynesia,contaminated,77910.0
+French Polynesia,dead,649.0
+French Polynesia,healthy,304994.0
+Barbados,contaminated,105515.0
+Barbados,dead,568.0
+Barbados,healthy,280510.0
+Guinea,contaminated,38210.0
+Guinea,dead,466.0
+Guinea,healthy,13858417.0
+Cape Verde,contaminated,63200.0
+Cape Verde,dead,412.0
+Cape Verde,healthy,592338.0
+Saint Lucia,contaminated,29741.0
+Saint Lucia,dead,409.0
+Saint Lucia,healthy,179054.0
+Burkina Faso,contaminated,22006.0
+Burkina Faso,dead,395.0
+Burkina Faso,healthy,22672974.0
+Congo,contaminated,25375.0
+Congo,dead,386.0
+Congo,healthy,5969658.0
+Gambia,contaminated,12586.0
+Gambia,dead,372.0
+Gambia,healthy,2705251.0
+New Caledonia,contaminated,79441.0
+New Caledonia,dead,314.0
+New Caledonia,healthy,289331.0
+Niger,contaminated,9473.0
+Niger,dead,314.0
+Niger,healthy,26207354.0
+Maldives,contaminated,185678.0
+Maldives,dead,311.0
+Maldives,healthy,523176.0
+Gabon,contaminated,48980.0
+Gabon,dead,306.0
+Gabon,healthy,2388385.0
+Curacao,contaminated,45986.0
+Curacao,dead,299.0
+Curacao,healthy,190575.0
+Liberia,contaminated,8043.0
+Liberia,dead,294.0
+Liberia,healthy,5302102.0
+Togo,contaminated,39343.0
+Togo,dead,290.0
+Togo,healthy,8848120.0
+Aruba,contaminated,43752.0
+Aruba,dead,280.0
+Aruba,healthy,105899.0
+Nicaragua,contaminated,15365.0
+Nicaragua,dead,245.0
+Nicaragua,healthy,6947905.0
+Grenada,contaminated,19644.0
+Grenada,dead,238.0
+Grenada,healthy,124983.0
+Iceland,contaminated,207974.0
+Iceland,dead,229.0
+Iceland,healthy,372445.0
+Brunei,contaminated,266819.0
+Brunei,dead,225.0
+Brunei,healthy,448552.0
+Chad,contaminated,7650.0
+Chad,dead,194.0
+Chad,healthy,17722924.0
+Djibouti,contaminated,15690.0
+Djibouti,dead,189.0
+Djibouti,healthy,1120473.0
+Equatorial Guinea,contaminated,17186.0
+Equatorial Guinea,dead,183.0
+Equatorial Guinea,healthy,1674550.0
+Guinea-Bissau,contaminated,8947.0
+Guinea-Bissau,dead,176.0
+Guinea-Bissau,healthy,2105228.0
+Seychelles,contaminated,50355.0
+Seychelles,dead,172.0
+Seychelles,healthy,106791.0
+Andorra,contaminated,47751.0
+Andorra,dead,165.0
+Andorra,healthy,79513.0
+Benin,contaminated,27982.0
+Benin,dead,163.0
+Benin,healthy,13352538.0
+Comoros,contaminated,8982.0
+Comoros,dead,161.0
+Comoros,healthy,836461.0
+Bermuda,contaminated,18622.0
+Bermuda,dead,153.0
+Bermuda,healthy,63901.0
+Solomon Islands,contaminated,24575.0
+Solomon Islands,dead,153.0
+Solomon Islands,healthy,723966.0
+Antigua and Barbuda,contaminated,9106.0
+Antigua and Barbuda,dead,146.0
+Antigua and Barbuda,healthy,93480.0
+South Sudan,contaminated,18368.0
+South Sudan,dead,138.0
+South Sudan,healthy,10912896.0
+Timor,contaminated,23386.0
+Timor,dead,138.0
+Timor,healthy,1341022.0
+Sierra Leone,contaminated,7760.0
+Sierra Leone,dead,126.0
+Sierra Leone,healthy,8605471.0
+Tajikistan,contaminated,17786.0
+Tajikistan,dead,125.0
+Tajikistan,healthy,9952539.0
+San Marino,contaminated,23008.0
+San Marino,dead,121.0
+San Marino,healthy,33448.0
+Saint Vincent and the Grenadines,contaminated,9538.0
+Saint Vincent and the Grenadines,dead,119.0
+Saint Vincent and the Grenadines,healthy,103721.0
+Isle of Man,contaminated,38008.0
+Isle of Man,dead,116.0
+Isle of Man,healthy,84302.0
+Central African Republic,contaminated,15351.0
+Central African Republic,dead,113.0
+Central African Republic,healthy,5578922.0
+Gibraltar,contaminated,20275.0
+Gibraltar,dead,110.0
+Gibraltar,healthy,32457.0
+Eritrea,contaminated,10189.0
+Eritrea,dead,103.0
+Eritrea,healthy,3683835.0
+Liechtenstein,contaminated,21276.0
+Liechtenstein,dead,88.0
+Liechtenstein,healthy,39179.0
+Sao Tome and Principe,contaminated,6279.0
+Sao Tome and Principe,dead,77.0
+Sao Tome and Principe,healthy,227239.0
+Dominica,contaminated,15760.0
+Dominica,dead,74.0
+Dominica,healthy,72610.0
+Monaco,contaminated,15948.0
+Monaco,dead,65.0
+Monaco,healthy,36361.0
+British Virgin Islands,contaminated,7305.0
+British Virgin Islands,dead,64.0
+British Virgin Islands,healthy,31204.0
+Micronesia (country),contaminated,22203.0
+Micronesia (country),dead,58.0
+Micronesia (country),healthy,114062.0
+Saint Kitts and Nevis,contaminated,6562.0
+Saint Kitts and Nevis,dead,46.0
+Saint Kitts and Nevis,healthy,47589.0
+Bonaire Sint Eustatius and Saba,contaminated,11716.0
+Bonaire Sint Eustatius and Saba,dead,39.0
+Bonaire Sint Eustatius and Saba,healthy,26974.0
+Burundi,contaminated,51722.0
+Burundi,dead,38.0
+Burundi,healthy,12889507.0
+Macao,contaminated,2377.0
+Macao,dead,38.0
+Macao,healthy,695104.0
+Cayman Islands,contaminated,31472.0
+Cayman Islands,dead,37.0
+Cayman Islands,healthy,68648.0
+Turks and Caicos Islands,contaminated,6479.0
+Turks and Caicos Islands,dead,36.0
+Turks and Caicos Islands,healthy,45654.0
+Samoa,contaminated,15982.0
+Samoa,dead,29.0
+Samoa,healthy,222332.0
+Faeroe Islands,contaminated,34658.0
+Faeroe Islands,dead,28.0
+Faeroe Islands,healthy,53061.0
+Bhutan,contaminated,62524.0
+Bhutan,dead,21.0
+Bhutan,healthy,782415.0
+Greenland,contaminated,11971.0
+Greenland,dead,21.0
+Greenland,healthy,56452.0
+Marshall Islands,contaminated,15547.0
+Marshall Islands,dead,17.0
+Marshall Islands,healthy,41559.0
+Vanuatu,contaminated,12013.0
+Vanuatu,dead,14.0
+Vanuatu,healthy,326716.0
+Kiribati,contaminated,3430.0
+Kiribati,dead,13.0
+Kiribati,healthy,131211.0
+Anguilla,contaminated,3904.0
+Anguilla,dead,12.0
+Anguilla,healthy,15853.0
+Tonga,contaminated,16211.0
+Tonga,dead,12.0
+Tonga,healthy,106843.0
+Palau,contaminated,5971.0
+Palau,dead,9.0
+Palau,healthy,18066.0
+Montserrat,contaminated,1403.0
+Montserrat,dead,8.0
+Montserrat,healthy,4397.0
+Wallis and Futuna,contaminated,3415.0
+Wallis and Futuna,dead,7.0
+Wallis and Futuna,healthy,11582.0
+North Korea,contaminated,1.0
+North Korea,dead,6.0
+North Korea,healthy,26069404.0
+Saint Pierre and Miquelon,contaminated,3349.0
+Saint Pierre and Miquelon,dead,2.0
+Saint Pierre and Miquelon,healthy,5881.0
+Cook Islands,contaminated,6389.0
+Cook Islands,dead,1.0
+Cook Islands,healthy,17030.0
+Nauru,contaminated,4621.0
+Nauru,dead,1.0
+Nauru,healthy,12689.0
+England,healthy,56550000.0
+Falkland Islands,contaminated,1930.0
+Guam,healthy,171783.0
+Guernsey,healthy,63329.0
+Jersey,healthy,110796.0
+Niue,healthy,1952.0
+Northern Cyprus,healthy,382836.0
+Northern Ireland,healthy,1896000.0
+Northern Mariana Islands,healthy,49574.0
+Pitcairn,healthy,47.0
+Puerto Rico,healthy,3252412.0
+Saint Helena,contaminated,2166.0
+Scotland,healthy,5466000.0
+Sint Maarten (Dutch part),healthy,44192.0
+Tokelau,healthy,1893.0
+Turkmenistan,healthy,6430777.0
+Tuvalu,contaminated,2805.0
+United States Virgin Islands,healthy,99479.0
+Vatican,contaminated,29.0
+Wales,healthy,3170000.0
+Western Sahara,healthy,576005.0
