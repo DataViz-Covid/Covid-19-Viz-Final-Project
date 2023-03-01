@@ -164,6 +164,32 @@ function drawChart_v12() {
         // Set initial value of the map
         visualizeMeasure(selectedMeasure, rangeStart);
 
+        // Addition of legend
+        const legend_items = [
+            {'name': 'Complete', 'color': 'red'},
+            {'name': 'Partial', 'color': 'orange'},
+            {'name': 'None', 'color': 'green'}
+        ]
+
+        svg.selectAll('balls')
+            .data(legend_items)
+            .enter()
+            .append("circle")
+            .attr("cx", main_win_size - 135)
+            .attr("cy", function(d,i){ return  380 + i*25})
+            .attr("r", 7)
+            .style("fill", function(d){ return d['color']})
+
+        svg.selectAll("mylabels")
+            .data(legend_items)
+            .enter()
+            .append("text")
+            .attr("x", main_win_size-120)
+            .attr("y", function(d,i){ return i * 25 + 380})
+            .text(function(d){ return d['name']})
+            .attr("text-anchor", "left")
+            .style("alignment-baseline", "middle")
+
     });
 
     function visualizeMeasure(measure, date){
