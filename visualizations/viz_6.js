@@ -63,7 +63,7 @@ function drawChart_v6() {
 
         d3.selectAll('.cartogram')
             .style('position', 'absolute')
-            .style('top', '1378.7vh');
+            .style('top', '1286.7vh');
 
         d3.selectAll('#cartogram_2019').selectAll('div')
             .style('background-color', '#dee6e7')

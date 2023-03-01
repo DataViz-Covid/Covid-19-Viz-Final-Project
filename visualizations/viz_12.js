@@ -18,9 +18,20 @@ function drawChart_v12() {
         'StayHomeRiskGPartial': 'orange'
     };
 
+    const mask = {
+        'MasksVoluntaryAllSpaces': 'red',
+        'MasksVoluntaryClosedSpaces': 'red',
+        'MasksMandatoryAllSpaces': 'red',
+        'MasksMandatoryClosedSpaces': 'red',
+        'MasksVoluntaryAllSpacesPartial': 'orange',
+        'MasksVoluntaryClosedSpacesPartial': 'orange',
+        'MasksMandatoryAllSpacesPartial': 'orange',
+        'MasksMandatoryClosedSpacesPartial': 'orange'
+    };
+
     const measure_colorings = {
         'StayHome': stay_home
-        //, 'StayHome2': stay_home
+        , 'Masks': mask
     }
 
     const rangeStart = new Date("2020-01-01");
