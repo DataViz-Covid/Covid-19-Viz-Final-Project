@@ -31,7 +31,7 @@ function drawChart_v4() {
     var path = sankey.links();
 
     // load the data
-    d3.json("/data/sankley.json").then(function(sankeydata) {
+    d3.json("data/sankley.json").then(function(sankeydata) {
 
         graph = sankey(sankeydata);
 
