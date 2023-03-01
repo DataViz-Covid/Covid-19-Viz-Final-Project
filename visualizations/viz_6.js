@@ -63,7 +63,7 @@ function drawChart_v6() {
 
         d3.selectAll('.cartogram')
             .style('position', 'absolute')
-            .style('top', '1286.7vh');
+            .style('top', '1vh');
 
         d3.selectAll('#cartogram_2019').selectAll('div')
             .style('background-color', '#dee6e7')
@@ -88,7 +88,7 @@ function drawChart_v6() {
         const sliderG = d3.select(div_id).append('svg')
             .attr('width', 2*main_win_size)
             .append("g")
-            .attr("transform", "translate(200,58)");
+            .attr("transform", "translate(200,68)");
         sliderG.call(slider);
 
         function setLeftDivWidth(w){
