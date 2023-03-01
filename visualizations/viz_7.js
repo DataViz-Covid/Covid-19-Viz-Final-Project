@@ -53,8 +53,8 @@ function drawChart_v7() {
         data.forEach(function(d) {
             d['new_cases'] = +d['new_cases'];
         });
-        
-        
+        var list2 = ["China", "India", "South Korea", "United States", "Turkey", "Japan", "Brazil"];
+        data=data.filter(function(d){return (list2.includes(d.location)) })
         var x = d3.scaleTime().domain(d3.extent(data, function(d) { return d.date; }))
         .range([ 0, width ]);
       
@@ -96,7 +96,7 @@ function drawChart_v7() {
     
         var color = d3.scaleOrdinal()
                 .domain([countries])
-                .range(['#16f306', '#feff1e', '#1ec9ff', '#f80187', '#8e8e8e', '#ff9b42', '#cd0a08', '#7c27d2', '#94fc8c', '#feff89', '#89e2ff', '#fe8ac9', '#c4c4c4', '#ffae66', '#f62927', '#b27ee6']);
+                .range(['#16f306', '#feff1e', '#1ec9ff', '#f80187', '#8e8e8e', '#ff9b42', '#cd0a08']);
 
 
         let Tooltip = d3.select(div_id)
@@ -160,8 +160,6 @@ function drawChart_v7() {
                     (d[1])
             
             })
-            .on("mouseover", highlight)
-            .on("mouseleave", noHighlight)
 
         g.append('g')
             .selectAll("dot")
@@ -178,7 +176,7 @@ function drawChart_v7() {
             .on("mouseleave", mouseleave)
         
 
-        if (all == false) {
+        
 
          svg.selectAll("myrect")
             .data(countries)
@@ -205,7 +203,7 @@ function drawChart_v7() {
             .on("mouseover", highlight1)
             .on("mouseleave", noHighlight) 
 
-        }
+        
 
         });
 

@@ -130,7 +130,7 @@ function drawChart_v9() {
     
         var color = d3.scaleOrdinal()
                 .domain([countries])
-                .range(['#16f306', '#feff1e', '#1ec9ff', '#f80187', '#8e8e8e', '#ff9b42', '#cd0a08', '#7c27d2', '#94fc8c', '#feff89', '#89e2ff', '#fe8ac9', '#c4c4c4', '#ffae66', '#f62927', '#b27ee6']);
+                .range([ '#feff1e', '#1ec9ff', '#16f306','#f80187', '#8e8e8e', '#ff9b42', '#cd0a08', '#7c27d2', '#94fc8c', '#feff89', '#89e2ff', '#fe8ac9', '#c4c4c4', '#ffae66', '#f62927', '#b27ee6']);
 
 
 
@@ -481,7 +481,7 @@ function drawChart_v9() {
             
                 var color = d3.scaleOrdinal()
                         .domain([countries])
-                        .range(['#16f306', '#feff1e', '#1ec9ff', '#f80187', '#8e8e8e', '#ff9b42', '#cd0a08', '#7c27d2', '#94fc8c', '#feff89', '#89e2ff', '#fe8ac9', '#c4c4c4', '#ffae66', '#f62927', '#b27ee6']);
+                        .range([ '#feff1e', '#1ec9ff', '#16f306', '#f80187', '#8e8e8e', '#ff9b42', '#cd0a08', '#7c27d2', '#94fc8c', '#feff89', '#89e2ff', '#fe8ac9', '#c4c4c4', '#ffae66', '#f62927', '#b27ee6']);
         
         
         
